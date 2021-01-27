@@ -2,11 +2,13 @@
 // Setup
 // =========================
 
+// @ts-ignore
 import { createApp } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
-import ErrorPage from '@/pages/ErrorPage.vue';
-import Home from '@/pages/Home.vue';
+import ErrorPage from '@/views/ErrorPage.vue';
+import Home from '@/views/Home.vue';
 import App from './App.vue';
+import store from './store';
 
 // =========================
 // Router Paths
@@ -20,7 +22,7 @@ const router = createRouter({
       name: 'home',
       component: Home,
       meta: {
-        title: 'Anivive Lifesciences',
+        title: 'Page Title',
       }
     },
     {
@@ -41,7 +43,9 @@ const router = createRouter({
 // @ts-ignore
 const app = createApp(App);
 
-app.use(router);
+app
+  .use(store)
+  .use(router);
 
 // =========================
 // Start Router
