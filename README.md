@@ -1,87 +1,107 @@
-# [INSERT-COMPANY-NAME]
-> Thank you for visiting our Github. For information on our company, open positions, or our
-> products, please visit us at [LINK-TO-YOUR-WEBSITE].
+# Vue Starter Package
+<hr>
 
+## General
+Thank you for downloading this package. We've attempted to create an "all-in-one" solution for any
+open source Vue 3 project you could think of making.
 
-## Overview
-#### General
-[![Current Version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/Anivive/vue-package-starter)
-[![MIT License](https://img.shields.io/badge/license-MIT-brightgreen)](LICENSE.md)
+Whether it be a simple website or plugin, or a more large scale application, this should have all
+the basic tools you will need to get started.
 
-#### Dependencies
-[![Vue](https://img.shields.io/badge/vue-v3.0.5-%2342b883)](https://v3.vuejs.org/)
-[![Vue-Router](https://img.shields.io/badge/vue--router-4.0.3-orange)](https://router.vuejs.org/)
-[![Typescript](https://img.shields.io/badge/typescript-4.1.3-yellow)](https://www.typescriptlang.org/)
+This package includes:
+* [Vue 3](https://v3.vuejs.org/) (Javascript Framework)
+    * [Vue Router](https://router.vuejs.org/) (Router System)
+    * [Vuex](https://vuex.vuejs.org/) (State Management)
+* [Typescript](https://www.typescriptlang.org/) (Javascript Extension)
+    * [Eslint](https://eslint.org/) (Javascript Linter)
+* [SASS](https://sass-lang.com/) (CSS Extension)
+* [Jest](https://jestjs.io/) (Unit Testing Framework)
+* [Docsify](https://docsify.js.org/#/) (Documentation Generator)
+* Documentation:
+    * MIT License
+    * Contributing Guidelines
+    * Code of Conduct
+    * Pull Request Template
+    * Bug Report Template
+    * Feature Request Template
 
-#### Testing
-[![Jest](https://img.shields.io/badge/jest-v26.6.3-blueviolet)](https://jestjs.io/en/)
-[![Testing Coverage](https://img.shields.io/badge/coverage-0%25-red)](https://github.com/Anivive/vue-package-starter)
+**Note: Feel free to add, remove, or modify any of the existing dependencies or documents included
+in this package. The purpose of this project is to make the process of getting an open source
+project in Vue 3 started more easily, and is in no way intended to force your team into using any
+tools or conventions that do not serve your project's specific needs. Only you and your team know
+what tools and conventions work best for your project, but you are free to use this as a starting
+point if this is helpful to you.**
 
-##### Documentation
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
+To see the full list of dependencies in this project, please visit the package.json file, and refer
+to the dependencies and dev-dependencies. If you do not need, and would like to uninstall any of
+these packages, please run one of the commands in your terminal:
+```
+// if installed locally
+cd <project-repo>
+npm uninstall <package-name>
 
+// if installed globally
+cd ~
+npm uninstall <package-name> -g
+```
+
+<hr>
 
 ## Getting Started
-### Install necessary dependencies for development
+### Update the location and names of some files:
+```
+README.md                                 ===> (delete or rename)
+/templates/ > README_TEMPLATE.md          ===> root (rename to 'README.md')
+/templates/ > CODE_OF_CONDUCT.md          ===> root
+/templates/ > LICENSE.md                  ===> root
+/templates/ > CONTRIBUTING.md             ===> /.github/
+/templates/ > /ISSUE_TEMPLATE/            ===> /.github/
+/templates/ > PULL_REQUEST_TEMPLATE.md    ===> /.github/
+```
+These files have been temporarily stored in the templates file for package simplicity.
+Feel free to delete the `templates` directory after completing this step.
+
+### Install necessary dependencies:
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compile (with hot-reloads) for development
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+NOW YOU'RE READY TO GO!
 
-### Lints and fixes files
-```
-npm run lint
-```
+<hr>
 
-### Initiates jest test suite
+## Testing
+In the event that you want to integrate testing into your package, this package is set up to include
+[Jest](https://jestjs.io/), a javascript testing framework, which allows you and your team to write,
+and execute automated unit tests for your project.
+
+This package is one of the most popular automated testing frameworks on Github, and works pretty
+much right out of the box.
+
+To run your automated tests, just run the command:
 ```
 npm run test
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+This package is not set up for other types of automated testing. If this is something you need for
+your project, we recommend the tool [Cypress.io](https://www.cypress.io/) for end-to-end testing.
+
+<hr>
 
 ## Documentation
+This package is set up to use [Docsify](https://docsify.js.org/#/), a documentation generator that
+creates a website for you and your team to view all of your documentation automatically.
 
+<hr>
 
-## Contributing Guidelines
-Please read through our [contributing guidelines](.github/CONTRIBUTING.md). Included are directions
-for opening issues, coding standards, and notes on development.
+## Open Source Project References
+For more information on best practices, and how to get your open source project started, please
+feel free to visit one of the following resources below:
 
-Moreover, if your pull request contains JavaScript patches or features, you must include relevant
-unit tests. All HTML and CSS should conform to the Code Guide, maintained by Mark Otto.
-
-
-## Code Of Conduct
-Please read through our [code of conduct](CODE_OF_CONDUCT.md).
-
-
-## Bugs and Feature Requests
-Found a bug or have a feature request? Please first read the issue guidelines and search for
-existing and closed issues.
-
-If your problem or idea is not addressed yet, please
-[open a new issue]((https://github.com/Anivive/vue-package-starter/issues)).
-
-## Thanks
-Thank you to all of you who have contributed to this package.
-[[Contribute to the Project](.github/CONTRIBUTING.md)]
-
-Status badges created using [Shields](https://github.com/badges/shields).
-
-## Copyright and License
-Code and documentation copyright [YEAR] [COMPANY-NAME] Code released under the [MIT License](LICENSE.md).
-
-Docs released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/).
-
-Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md).
-By participating in this project you agree to abide by its terms.
+* [Open Source Guides](https://opensource.guide/starting-a-project/)
+* [Github Learning Lab - Create an open source program](https://lab.github.com/githubtraining/create-an-open-source-program)

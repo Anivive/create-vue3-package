@@ -199,9 +199,10 @@ Adhere to the [Airbnb Style Guide](https://github.com/airbnb/javascript).
 * 4 spaces
 * "Attractive"
 
-### Checking coding style
-Run `npm run test` before committing to ensure your changes follow our coding standards.
+[comment]: <> (### Checking coding style)
+
+[comment]: <> (Run `npm run test` before committing to ensure your changes follow our coding standards.)
 
 
 ## License
-By contributing your code, you agree to license your contribution under the MIT License. By contributing to the documentation, you agree to license your contribution under the [Creative Commons Attribution 3.0 Unported License](https://creativecommons.org/licenses/by/3.0/).
+By contributing your code, you agree to license your contribution under the [MIT License](LICENSE.md). By contributing to the documentation, you agree to license your contribution under the [Creative Commons Attribution 3.0 Unported License](https://creativecommons.org/licenses/by/3.0/).
