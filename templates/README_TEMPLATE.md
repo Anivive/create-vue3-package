@@ -1,8 +1,8 @@
-# [INSERT-COMPANY-NAME]
+# <span style="color: red">[COMPANY-NAME]</span>
 > Thank you for visiting our Github. For information on our company, open positions, or our
-> products, please visit us at [LINK-TO-YOUR-WEBSITE].
+> products, please visit us at <span style="color: red">[WEBSITE-URL]</span>.
 
-<hr>
+---
 
 ## Overview
 #### General
@@ -23,7 +23,7 @@
 
 Status badges created using [Shields.io](https://github.com/badges/shields).
 
-<hr>
+---
 
 ## Getting Started
 ### Install necessary dependencies for development
@@ -54,12 +54,12 @@ npm run test
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-<hr>
+---
 
 ## Documentation
 See (Docsify Link) for full documentation.
 
-<hr>
+---
 
 ## Contributing Guidelines
 Please read through our [contributing guidelines](CONTRIBUTING.md). Included are directions
@@ -68,12 +68,12 @@ for opening issues, coding standards, and notes on development.
 Moreover, if your pull request contains JavaScript patches or features, you must include relevant
 unit tests. All HTML and CSS should conform to the Code Guide, maintained by Mark Otto.
 
-<hr>
+---
 
 ## Code Of Conduct
 Please read through our [code of conduct](CODE_OF_CONDUCT.md).
 
-<hr>
+---
 
 ## Bugs and Feature Requests
 Found a bug or have a feature request? Please first read the issue guidelines and search for
@@ -82,16 +82,16 @@ existing and closed issues.
 If your problem or idea is not addressed yet, please
 [open a new issue](https://github.com/Anivive/vue-package-starter/issues).
 
-<hr>
+---
 
 ## Thanks
 Thank you to all of you who have contributed to this package.
 [[Contribute to the Project](CONTRIBUTING.md)]
 
-<hr>
+---
 
 ## Copyright and License
-Code and documentation copyright [YEAR] [COMPANY-NAME] Code released under the [MIT License](LICENSE.md).
+Code and documentation copyright <span style="color: red">[YEAR] [COMPANY-NAME]</span> Code released under the [MIT License](LICENSE.md).
 
 Docs released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/).
 
