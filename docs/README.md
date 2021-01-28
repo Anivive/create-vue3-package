@@ -1,21 +1,14 @@
-# [INSERT-COMPANY-NAME]
+# <span style="color:red">[COMPANY-NAME]</span>
 
-## Overview
+### Introduction
+Display package's documentation for developers and users to understand and implement the abilities
+of this package.
 
-### Badges 
-Include badges for project dependencies
+### Usage
+Please update this README, and the associated documents in this /docs directory to see changes in
+your documentation.
 
-[![Current Version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/Anivive/vue-package-starter)
-[![MIT License](https://img.shields.io/badge/license-MIT-brightgreen)](../templates/LICENSE.md)
+1. Run `docsify serve`
+2. Visit `http://localhost:3000`
 
-### Introduction/Overview
-Describe the purpose or utility of the plugin
-
-## Installation 
-Give instructions on how to install the plugin to the environment
-
-## Usage
-Describe the usage using sub headers and code blocks to get the user started
-
-
-
+See [full documentation](https://docsify.js.org/#/) for more information. 

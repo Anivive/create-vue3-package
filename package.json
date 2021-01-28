@@ -7,13 +7,12 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test": "jest",
-    "configure": "config",
-    "hello": "node configure_project.js"
+    "test": "jest"
   },
   "main": "main.ts",
   "dependencies": {
     "core-js": "^3.8.1",
+    "docsify-cli": "^4.4.2",
     "vue": "^3.0.5"
   },
   "devDependencies": {

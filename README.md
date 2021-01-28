@@ -52,6 +52,7 @@ root > README.md                          ===> delete or rename
 /templates/ > LICENSE.md                  ===> [COMPANY-NAME] (1)
 /templates/ > CONTRIBUTING.md             ===> [PACKAGE-NAME] (5)
 /templates/ > README_TEMPLATE.md          ===> [COMPANY-NAME] (2), [WEBSITE-URL] (1), [YEAR] (1)
+/docs/ > README.md                        ===> [COMPANY-NAME] (1)
 ```
 
 ### Update the location of some files:
@@ -82,22 +83,48 @@ NOW YOU'RE READY TO GO!
 
 ## Testing
 In the event that you want to integrate testing into your package, this package is set up to include
-[Jest](https://jestjs.io/), a javascript testing framework, which allows you and your team to write,
-and execute automated unit tests for your project.
+Jest, a javascript testing framework, which allows you and your team to write, and execute
+automated unit tests for your project.
 
 This package is one of the most popular automated testing frameworks on Github, and works pretty
 much right out of the box.
 
-To run your automated tests, just run the command:
+If you wish to expand on the test suite, make sure to add all of your test files to the `/tests`
+directory, so Jest can automatically pick them up.
+
+To run your automated tests, just run the commands below in your terminal:
 ```
+cd <repo-name>
+
 npm run test
 ```
 
+[Full Documentation](https://jestjs.io/)
 ---
 
 ## Documentation
-This package is set up to use [Docsify](https://docsify.js.org/#/), a documentation generator that
-creates a website for you and your team to view all of your documentation automatically.
+This package is set up to use Docsify, a documentation generator that creates a website portal for
+you and your team to view all of your documentation automatically.
+
+Your documentation README files are located in the `/docs` directory.
+```
+/docs/README.md                 ==> landing page for your documentation portal
+/docs/_sidebar.md               ==> displays your documentation archictecture. (manually updated)
+/docs/changelog.md              ==> references your documentation updates (manually updated)
+/docs/customization/            ==> example folder
+/docs/getting_started/          ==> example folder
+/docs/guides/                   ==> example folder
+```
+
+In order to view your documentation, just run the commands below in your terminal:
+```
+cd <repo-name>
+
+docsify serve
+```
+The page to view your documentation will likely be located at: `http://localhost:3000`
+
+[Full Documentation](https://docsify.js.org/#/)
 
 ---
 
