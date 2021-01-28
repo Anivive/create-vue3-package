@@ -43,8 +43,15 @@ npm uninstall <package-name>
 
 ### Update the names of some files:
 ```
-README.md                                 ===> delete or rename
+root > README.md                          ===> delete or rename
 /templates/ > README_TEMPLATE.md          ===> rename to 'README.md'
+```
+
+### Update the content of some files: (highlighted in <span style="color:red">red</span>)
+```
+/templates/ > LICENSE.md                  ===> [COMPANY-NAME] (1)
+/templates/ > CONTRIBUTING.md             ===> [PACKAGE-NAME] (5)
+/templates/ > README_TEMPLATE.md          ===> [COMPANY-NAME] (2), [WEBSITE-URL] (1), [YEAR] (1)
 ```
 
 ### Update the location of some files:
@@ -57,14 +64,7 @@ README.md                                 ===> delete or rename
 /templates/ > PULL_REQUEST_TEMPLATE.md    ===> /.github/
 ```
 These files have been temporarily stored in the templates file for package simplicity.
-Feel free to delete the `templates` directory after completing this step.
-
-### Update the content of some files: (highlighted in <span style="color:red">red</span>")
-```
-/templates/ > LICENSE.md                  ===> [COMPANY-NAME] (1)
-/templates/ > CONTRIBUTING.md             ===> [PACKAGE-NAME] (5)
-/templates/ > README_TEMPLATE.md          ===> [COMPANY-NAME] (2), [WEBSITE-URL] (1), [YEAR] (1)
-```
+Feel free to delete the `/templates` directory after completing this step.
 
 ### Install necessary dependencies:
 ```
