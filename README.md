@@ -118,11 +118,13 @@ Your documentation README files are located in the `/docs` directory.
 
 In order to view your documentation, just run the commands below in your terminal:
 ```
-cd <repo-name>
+npm i docsify-cli -g
+
+cd <repo-name>/docs
 
 docsify serve
 ```
-The page to view your documentation will likely be located at: `http://localhost:3000`
+View your documentation at: `http://localhost:3000`
 
 [Full Documentation](https://docsify.js.org/#/)
 
