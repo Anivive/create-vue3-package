@@ -1,106 +1,102 @@
-# Vue Starter Package
----
+<div style="text-align:center">
 
-## General
-Thank you for downloading this package. We've attempted to create an "all-in-one" solution for any
-open source Vue 3 package you could think of creating.
+![Package Logo](src/assets/vue-ts-eslint-jest.png)
 
-Whether it's a simple plugin, or a large-scale application, this package should have the building
-blocks you will need to get started.
+# Vue 3 Package Starter
 
-This package includes:
-* [Vue 3](https://v3.vuejs.org/) (Javascript Framework)
-* [Typescript](https://www.typescriptlang.org/) (Javascript Extension)
-    * [Eslint](https://eslint.org/) (Javascript Linter)
-* [Jest](https://jestjs.io/) (Unit Testing Framework)
-* [Docsify](https://docsify.js.org/#/) (Documentation Generator)
-* Documentation:
-    * MIT License
-    * Contributing Guidelines
-    * Code of Conduct
-    * Pull Request Template
-    * Bug Report Template
-    * Feature Request Template
+Vue Starter Package integrated with Typescript and Eslint
 
-**Note: Only you and your team know what tools and conventions work best for your project, but you
-are free to use this as a starting point if this is helpful to you. Feel free to add, remove, or
-modify any of the existing dependencies or documents included in this package. The purpose of this
-project is to make the process of getting an open source project in Vue 3 started quickly and
-easily, and is in no way intended to force your team into using any tools or conventions that do
-not serve your project's specific needs.**
+Automated unit testing with Jest
 
-To see the full list of dependencies in this project, please visit [package.json](package.json),
-and refer to the dependencies. If you do not need, and would like to uninstall any of these
-packages, please run one of the commands in your terminal:
-```
-cd <project-repo>
-npm uninstall <package-name>
-```
+Auto-generated documentation via Docsify
 
----
+[![Vue](https://img.shields.io/badge/vue-3.0.5-%2342b883)](https://v3.vuejs.org/)
+[![Typescript](https://img.shields.io/badge/typescript-4.1.3-blue)](https://www.typescriptlang.org/)
+[![Jest](https://img.shields.io/badge/jest-26.6.3-red)](https://jestjs.io/en/)
+[![Docsify](https://img.shields.io/badge/docsify-4.11.6-green)](https://docsify.js.org/#/)
+
+</div>
+
+
 
 ## Getting Started
 
-### Update the names of some files:
-```
-root > README.md                          ===> delete or rename
-/templates/ > README_TEMPLATE.md          ===> rename to 'README.md'
-```
-
-### Update the content of some files: (highlighted in <span style="color:red">red</span>)
-```
-/templates/ > LICENSE.md                  ===> [COMPANY-NAME] (1)
-/templates/ > CONTRIBUTING.md             ===> [PACKAGE-NAME] (5)
-/templates/ > README_TEMPLATE.md          ===> [COMPANY-NAME] (2), [WEBSITE-URL] (1), [YEAR] (1)
-/docs/ > README.md                        ===> [COMPANY-NAME] (1)
-```
-
-### Update the location of some files:
-```
-/templates/ > README_TEMPLATE.md          ===> root
-/templates/ > CODE_OF_CONDUCT.md          ===> root
-/templates/ > LICENSE.md                  ===> root
-/templates/ > CONTRIBUTING.md             ===> /.github/
-/templates/ > /ISSUE_TEMPLATE/            ===> /.github/
-/templates/ > PULL_REQUEST_TEMPLATE.md    ===> /.github/
-```
-These files have been temporarily stored in the templates file for package simplicity.
-Feel free to delete the `/templates` directory after completing this step.
-
-### Install necessary dependencies:
+#### Install necessary dependencies:
 ```
 npm install
 ```
 
-### Compile (with hot-reloads) for development
+#### Compile (with hot-reloads) for development
 ```
 npm run serve
 ```
 
-NOW YOU'RE READY TO GO!
 
----
+## Table of Contents
+
+* [Overview](#vue-3-package-starter)
+* [Getting Started](#getting-started)
+* [Table of Contents](#table-of-contents)
+* [What's in this Package?](#whats-in-this-package)
+* [Testing](#testing)
+* [Documentation](#documentation)
+* [How to Open Source Your Project](#how-to-open-source-your-project)
+* [Contributing Guidelines](#contributing-guidelines)
+* [Code Of Conduct](#code-of-conduct)
+* [Bugs and Feature Requests](#bugs-and-feature-requests)
+* [Copyright and License](#copyright-and-license)
+
+
+
+## What's in this Package?
+
+```
+vue-starter-package
+├── .github
+├── docs
+├── node_modules
+├── src
+│   └── assets
+│   └── main.ts
+├── templates
+│    └── ISSUE_TEMPLATE
+│        └── bug_report.md
+│        └── feature_request.md
+│    └── CODE_OF_CONDUCT.md
+│    └── CONTRIBUTING.md
+│    └── LICENSE.md
+│    └── PULL_REQUEST_TEMPLATE.md
+│    └── README_TEMPLATE.md
+├── tests
+│    └── sum.js
+│    └── sum.test.js
+├── .eslintrc.js
+├── .gitignore
+├── babel.config.js
+├── CODE_OF_CONDUCT.md
+├── LICENSE.md
+├── package.json
+├── package-lock.json
+├── README.md
+└── tsconfig.json
+```
+
+
 
 ## Testing
-In the event that you want to integrate testing into your package, this package is set up to include
-Jest, a javascript testing framework, which allows you and your team to write, and execute
-automated unit tests for your project.
+To expand on the test suite, add your test files to the `/tests` directory, and Jest will
+automatically pick them up.
 
-This package is one of the most popular automated testing frameworks on Github, and works pretty
-much right out of the box.
-
-If you wish to expand on the test suite, make sure to add all of your test files to the `/tests`
-directory, so Jest can automatically pick them up.
-
-To run your automated tests, just run the commands below in your terminal:
+To run your automated tests, run the commands below in your terminal:
 ```
 cd <repo-name>
 
 npm run test
 ```
 
-[Full Documentation](https://jestjs.io/)
----
+[Jest Documentation](https://jestjs.io/docs/en/getting-started)
+
+
 
 ## Documentation
 This package is set up to use Docsify, a documentation generator that creates a website portal for
@@ -109,30 +105,82 @@ you and your team to view all of your documentation automatically.
 Your documentation README files are located in the `/docs` directory.
 ```
 /docs/README.md                 ==> landing page for your documentation portal
-/docs/_sidebar.md               ==> displays your documentation archictecture. (manually updated)
-/docs/changelog.md              ==> references your documentation updates (manually updated)
+/docs/_sidebar.md               ==> displays your documentation archictecture
+/docs/changelog.md              ==> references your documentation updates
 /docs/customization/            ==> example folder
 /docs/getting_started/          ==> example folder
 /docs/guides/                   ==> example folder
 ```
 
-In order to view your documentation, just run the commands below in your terminal:
+In order to view your documentation, run the commands below in your terminal:
 ```
 npm i docsify-cli -g
 
-cd <repo-name>/docs
+cd <repo-name>
 
-docsify serve
+npm run docs
 ```
+
 View your documentation at: `http://localhost:3000`
 
-[Full Documentation](https://docsify.js.org/#/)
+[Docsify Documentation](https://docsify.js.org/#/quickstart)
+
+
+
+## How to Open Source Your Project
+
+If you are looking to open source this project, we've created some template documentation for you
+to get the ball rolling:
+* MIT License
+* Contributing Guidelines
+* Code of Conduct
+* Pull Request Template
+* Bug Report Template
+* Feature Request Template
+
+
+For more information on creating an open source project and best practices, here are some helpful
+resources to get you started:
+* [Open Source Guides](https://opensource.guide/starting-a-project/)
+* [Github Learning Lab - Create an open source program](https://lab.github.com/githubtraining/create-an-open-source-program)
+
+
+
+## Contributing Guidelines
+Please read through our [contributing guidelines](.github/CONTRIBUTING.md). Included are directions
+for opening issues, coding standards, and notes on development.
+
+Moreover, if your pull request contains JavaScript patches or features, you must include relevant
+unit tests. All HTML and CSS should conform to the Code Guide, maintained by Mark Otto.
+
+
+
+## Code of Conduct
+Please read through our [code of conduct](CODE_OF_CONDUCT.md).
+
+
+
+## Bugs and Feature Requests
+Found a bug or have a feature request? Please first read the issue guidelines and search for
+existing and closed issues.
+
+If your problem or idea is not addressed yet, please
+[open a new issue](https://github.com/Anivive/vue-package-starter/issues).
+
+
+
+## Copyright and License
+Code and documentation copyright 2021 Anivive Lifesciences Code released under the [MIT License](LICENSE.md).
+
+Docs released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/).
+
+Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md).
+By participating in this project you agree to abide by its terms.
+
+
 
 ---
 
-## Open Source Project References
-For more information on best practices, and how to get your open source project started, please
-feel free to visit one of the following resources below:
 
-* [Open Source Guides](https://opensource.guide/starting-a-project/)
-* [Github Learning Lab - Create an open source program](https://lab.github.com/githubtraining/create-an-open-source-program)
+
+Status badges created using [Shields.io](https://github.com/badges/shields).
