@@ -8,7 +8,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "docs": "cd docs && docsify serve",
-    "test": "jest"
+    "test": "jest ./test"
   },
   "main": "main.ts",
   "dependencies": {
