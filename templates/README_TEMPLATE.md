@@ -1,6 +1,6 @@
 <div style="text-align:center" align="center">
 
-![Package Logo](../src/assets/vue-ts-eslint-jest.png)
+![Package Logo](../assets/vue-ts-eslint-jest.png)
 
 # <span style="color: red">[COMPANY-NAME]</span>
 
