@@ -4,7 +4,7 @@ export default {
     title: String
   },
   methods: {
-    toUpperCase(val) {
+    toUpperCase(val: string) {
       return val.toUpperCase();
     }
   },
