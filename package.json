@@ -2,7 +2,10 @@
   "name": "vue-package-starter",
   "version": "1.0.0",
   "description": "To assist developers in starting a Vue 3 package with basic file structure and dependencies to get started quickly and efficiently.",
-  "author": "Anivive Lifesciences, Inc.",
+  "authors": [
+    "Skyler Stearns",
+    "Dan McGowan"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
