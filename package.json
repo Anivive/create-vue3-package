@@ -8,10 +8,8 @@
     "Nick Sirago"
   ],
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "docs": "cd docs && docsify serve",
+    "docs": "docsify serve ./docs",
     "test": "jest ./tests"
   },
   "main": "main.ts",

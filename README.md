@@ -26,9 +26,16 @@ Auto-generated documentation via Docsify
 npm install
 ```
 
-#### Compile (with hot-reloads) for development
+#### Initiate Test Suite
 ```
-npm run serve
+npm test
+```
+
+#### Serve Docs
+```
+npm run docs
+
+visit -> http://localhost:3000
 ```
 
 

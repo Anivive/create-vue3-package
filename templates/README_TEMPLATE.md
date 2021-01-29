@@ -27,28 +27,22 @@ Auto-generated documentation via Docsify
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
 ### Lints and fixes files
 ```
 npm run lint
 ```
 
-### Initiates jest test suite
+#### Initiate Test Suite
 ```
-npm run test
+npm test
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+#### Serve Docs
+```
+npm run docs
+
+visit -> http://localhost:3000
+```
 
 
 
