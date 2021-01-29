@@ -1,3 +1,8 @@
+<template>
+  <div>{{ toUpperCase(title) }}</div>
+</template>
+
+<script>
 export default {
   name: 'Component',
   props: {
@@ -7,8 +12,9 @@ export default {
     toUpperCase(val) {
       return val.toUpperCase();
     }
-  },
-  template: `
-    <div>{{ toUpperCase(title) }}</div>
-  `
+  }
 };
+</script>
+<style lang="scss" scoped>
+
+</style>
