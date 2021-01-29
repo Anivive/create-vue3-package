@@ -26,12 +26,17 @@ Auto-generated documentation via Docsify
 npm install
 ```
 
-#### Initiate Test Suite
+#### Create new project
+```
+npx create-vue3-package <repo-name>
+```
+
+#### Initiate test suite
 ```
 npm test
 ```
 
-#### Serve Docs
+#### Serve docs
 ```
 npm run docs
 
@@ -58,34 +63,37 @@ visit -> http://localhost:3000
 ## What's in this Package?
 
 ```
-vue-starter-package
-├── .github
-├── docs
-├── node_modules
-├── src
-│   └── assets
-│   └── main.ts
+create-vue3-package
 ├── templates
-│    └── ISSUE_TEMPLATE
-│        └── bug_report.md
-│        └── feature_request.md
-│    └── CODE_OF_CONDUCT.md
-│    └── CONTRIBUTING.md
-│    └── LICENSE.md
-│    └── PULL_REQUEST_TEMPLATE.md
-│    └── README_TEMPLATE.md
-├── tests
-│    └── sum.js
-│    └── sum.test.js
-├── .eslintrc.js
-├── .gitignore
-├── babel.config.js
-├── CODE_OF_CONDUCT.md
-├── LICENSE.md
-├── package.json
-├── package-lock.json
-├── README.md
-└── tsconfig.json
+│   └── ISSUE_TEMPLATE
+│       └── bug_report.md
+│       └── feature_request.md
+│   └── CODE_OF_CONDUCT.md
+│   └── CONTRIBUTING.md
+│   └── LICENSE.md
+│   └── PULL_REQUEST_TEMPLATE.md
+│   └── README_TEMPLATE.md
+│   └── src
+│       └── main.ts
+│       └── main.vue
+│   └── tests
+│       └── example-ts-file.test.js
+│       └── example-vue-file.test.js
+│   └── docs
+│       └── customization
+│           └── configuration.md
+│           └── themes.md
+│       └── getting_started
+│           └── more-pages.md
+│           └── quickstart.md
+│       └── guides
+│           └── deploy.md
+│           └── helpers.md
+│       └── .nojekyll
+│       └── _sidebar.md
+│       └── changelog.md
+│       └── index.html
+│       └── README.md
 ```
 
 
@@ -94,12 +102,19 @@ vue-starter-package
 To expand on the test suite, add your test files to the `/tests` directory, and Jest will
 automatically pick them up.
 
+This package has been pre-configured to test `.js`, `.ts`, and `.vue` files for your convenience.
+Please see `/templates/tests` for example implementation. 
+
 To run your automated tests, run the commands below in your terminal:
 ```
 cd <repo-name>
 
-npm run test
+npm test
 ```
+If you would like to have an HTML file generated to view the results in more detail, please
+uncomment the line 'html' in `jest.config.js`. Otherwise, the results will be visible in your
+terminal.
+
 
 [Jest Documentation](https://jestjs.io/docs/en/getting-started)
 
