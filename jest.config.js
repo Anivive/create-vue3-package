@@ -8,7 +8,8 @@ module.exports = {
   ],
   transform: {
     '.*\\.(vue)$': 'vue-jest',
-    '^.+\\.(js|ts)$': '<rootDir>/node_modules/babel-jest'
+    '^.+\\.(js)$': '<rootDir>/node_modules/babel-jest',
+    '^.+\\.(ts)$': '<rootDir>/node_modules/ts-jest'
   },
   collectCoverage: true,
   collectCoverageFrom: [
