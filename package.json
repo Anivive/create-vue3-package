@@ -1,5 +1,5 @@
 {
-  "name": "vue-package-starter",
+  "name": "@anivive/create-vue3-package",
   "version": "1.0.0",
   "description": "To assist developers in starting a Vue 3 package with basic file structure and dependencies to get started quickly and efficiently.",
   "author": "Skyler Stearns",
@@ -39,15 +39,15 @@
     "vue-jest": "^5.0.0-alpha.8"
   },
   "bugs": {
-    "url": "https://github.com/Anivive/vue-package-starter/issues"
+    "url": "https://github.com/Anivive/create-vue3-package/issues"
   },
   "directories": {
     "test": "tests"
   },
-  "homepage": "https://github.com/Anivive/vue-package-starter#readme",
+  "homepage": "https://github.com/Anivive/create-vue3-package#readme",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Anivive/vue-package-starter.git"
+    "url": "git+https://github.com/Anivive/create-vue3-package.git"
   }
 }
