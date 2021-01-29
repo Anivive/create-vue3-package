@@ -1,4 +1,4 @@
-<div style="text-align:center">
+<div style="text-align:center" align="center">
 
 ![Package Logo](src/assets/vue-ts-eslint-jest.png)
 
