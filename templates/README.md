@@ -44,6 +44,10 @@ npm run docs
 visit -> http://localhost:3000
 ```
 
+#### Build Package
+```
+npm run build
+```
 
 
 ## Table of Contents
@@ -118,8 +122,13 @@ View your documentation at: `http://localhost:3000`
 
 [Docsify Documentation](https://docsify.js.org/#/quickstart)
 
----
+## Building
+When you are ready to deploy your package, run the build command, this will create a dist folder with compiled files that can then be published to a package manager such as `npm` or `yarn`.
 
+You should import and then export the components and/or utilities that you would like to be accessable in the `src/main.js` file, so that users can import only the relevant parts of your application easily.
+
+
+---
 
 
 ## Contributing Guidelines
