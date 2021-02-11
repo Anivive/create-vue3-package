@@ -1,5 +1,5 @@
 import { shallowMount } from '@vue/test-utils';
-import Component from '@/main.vue';
+import Component from '@/components/main.vue';
 
 let wrapper;
 
